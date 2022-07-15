@@ -112,7 +112,7 @@ height: 4.5rem;
 line-height: 4.5rem;
 width: 4.5rem;
 text-align: center;
-font-size: 40px;
+font-size: 1.7rem;
 color: var(--black);
 border-radius: 50%;
 background: #eee;
@@ -126,7 +126,7 @@ header .icons a:hover{
     transform: rotate(360deg);
 }
 
-header .icon #menu-bars{
+header .icons #menu-bars{
     display: none;
 }
 
