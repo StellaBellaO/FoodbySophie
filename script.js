@@ -60,3 +60,5 @@ var swiper = new Swiper(".home-slider", {
   }
 
   window.onload = fadeOut();
+
+ 
