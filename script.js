@@ -21,3 +21,7 @@ function loader(){
     },
     loop:true,
   });
+
+  document.querySelector("form.form-alert").addEventListener("submit", function() {
+    alert("Your order has been placed.");
+  }, false);
