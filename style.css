@@ -528,6 +528,11 @@ text-decoration: none;
             font-size: 2rem;
             background: #eee;
         }
+
+        .image {
+            display: block;
+            text-align: center;
+        }
     
     
         .home .home-slider .slide .content h3{
