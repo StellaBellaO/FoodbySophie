@@ -117,7 +117,6 @@ html {
 
 
 
-
 .about .row{
     display: flex;
     flex-wrap: wrap;
@@ -128,7 +127,7 @@ html {
 .about {
     background: #fbe7d7;
     padding-right: 10px;
-    padding: 20rem 9%;
+    padding: 20rem 9% 40rem 0rem;
 }
 
 .about .row .image {
@@ -138,11 +137,11 @@ html {
 }
 
 .about .row .image img{
-    max-width: 1000px;
+    max-width: 1250px;
     max-height: inherit;
     height: inherit;
     width: inherit;
-
+padding-top: 100px;
 }
 
 
@@ -156,7 +155,7 @@ html {
 
 
 .about h3{
-    text-align: center;
+    text-align: end;
 }
 .about .row .content p{
     color: #aa401b;
@@ -180,7 +179,7 @@ margin-left: 5px;
   padding-left: 150px;
   font-family: 'Hi Melody', cursive;
   font-weight:bolder; 
-  color: #d45a28;
+  color: #d45a28;font-family: 'Hi Melody', cursive;
   font-size: 100px;
 line-height: 1;
 }
@@ -213,12 +212,15 @@ line-height: 1;
     padding-top: 80px;
     text-decoration: none;
     font-family: 'Hi Melody', cursive;
+    padding-top: 250px;
 }
 
 .share a {
     color: #d45a28;
+    text-decoration: none;
+    font-weight: bolder;
 }
-   
+  
    
 
     .sub-heading {
@@ -356,73 +358,87 @@ text-decoration: none;
 
 }
 
+@media (max-width:991px){
+    html {
+        font-size: 55%;   
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    header .icon #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar {
+      position: absolute;  
+      top: 100%; left: 0; right: 0;
+      background: #a8b98a;
+      border-top: .1rem solid rgba(0,0,0,.2);
+      border-bottom: .1rem solid rgba(0,0,0,.2);
+      padding: 1rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    .image {
+        display: block;
+        text-align: center;
+    }
+    .about .row .image img{
+        height: auto;
+        width: 40%;
+        margin-left: 200px;
+    }
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+    .about h3{
+        text-align:start;
+        font-size: 2rem;
+    }
+}
 
 
-    @media (max-width:991px){
-        html {
-            font-size: 55%;   
-        }
-    
-        header{
-            padding: 1rem 2rem;
-        }
-        section{
-            padding: 2rem;
-        }
+@media (max-width:450px){
+    html {
+        font-size: 50%;   
     }
-    
-    @media (max-width:768px){
-        header .icon #menu-bars{
-            display: inline-block;
-        }
-    
-        header .navbar {
-          position: absolute;  
-          top: 100%; left: 0; right: 0;
-          background: #a8b98a;
-          border-top: .1rem solid rgba(0,0,0,.2);
-          border-bottom: .1rem solid rgba(0,0,0,.2);
-          padding: 1rem;
-          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        }
-    
-        header .navbar.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
-    
-        header .navbar a{
-            display: block;
-            padding: 1.5rem;
-            margin: 1rem;
-            font-size: 2rem;
-            background: #eee;
-        }
+    .dishes .box-container .box img {
+        height: auto;
+        width: 100%;
+    }
+    .order form .inputBox .input {
+        width: 100%;
+    }
+    .about .row .image {
+        display: block;
+        text-align: start;
+    }
+    .content {
+        text-align: end;
+    }
+}
 
-        .image {
-            display: block;
-            text-align: center;
-        }
-    
-    
-        .home .home-slider .slide .content h3{
-            font-size: 5rem;
-        }
-    }
-    
-    @media (max-width:450px){
-        html {
-            font-size: 50%;   
-        }
-        .dishes .box-container .box img {
-            height: auto;
-            width: 100%;
-        }
-        .order form .inputBox .input {
-            width: 100%;
-        }
-        .about {
-            
-        }
-    }
-    
+
+
+   
     
