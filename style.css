@@ -56,14 +56,37 @@ section {
         top: 0;
         left: 0;
         right: 0;
-        background: wh;
-        padding: 40px;
+        background: #a8b98a;
         display: flex;
         align-items: center;
         justify-content: center;
         box-shadow: var(--box-shadow);
     
     }
+
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: white;
+      }
+      
+      .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      
+      .hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
     
     header .navbar a{
         font-size: 20px;
@@ -71,17 +94,24 @@ section {
         padding: .5rem 1.5rem;
         color: white;
         text-decoration: none;
+        font-family: 'Times New Roman', Flow Regular;
         }
 
-        .shop-logo {
-            width: 350px;
-            height: auto;
+        .navbar a:hover {
+            font-size:88px;
+    font-size-adjust: 20px;
+        }
+
+        img.shop-logo {
+            width: 550px;
             border-radius: 50%;
-            background: white;
+            background: #a8b98a;
+            margin-bottom: 70px;
+            border: 10px;
         }
 
         body {
-            background: black;
+            background: #a8b98a;
           }
           
           .arrows {
@@ -485,6 +515,17 @@ text-decoration: none;
 
 .order .heading {
     color: white;
+}
+
+.catering {
+    color: #d45a28;
+    text-align: right;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Flow Regular;
+
 }
 
 
