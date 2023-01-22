@@ -223,7 +223,7 @@ line-height: 1;
    
 
     .sub-heading {
-        color: black;
+        color: white;
         text-align: center;
         margin-top: 30px;
         padding-top: 20px;
@@ -338,6 +338,8 @@ text-decoration: none;
     background: #fbe7d7;
 }
 
+\\\\ Order CSS \\\\\
+
 .order .sub-heading {
     color: white;
 }
@@ -356,6 +358,7 @@ text-decoration: none;
     font-family: 'Times New Roman';
 
 }
+
 
 @media (max-width:991px){
     html {
@@ -432,17 +435,12 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     .about .row .image img{
         height: auto;
-        width: 50%;
+        width: 40%;
         margin-left: 200px;
     }
-
-    
     .about h3{
         text-align:center;
         font-size: 2rem;
-    }
-    p .share {
-        text-align: center;
     }
 }
 
@@ -461,7 +459,6 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     .about {
         display: block;
         text-align: center;
-
     }
     .content {
         text-align: end;
@@ -475,14 +472,12 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     .about .row .image img {
         display: block;
         position:absolute;
-        padding: 200px 0 990px 0;
+        padding: 200px 0 200px 0;
         justify-content: center;
         height: auto;
-        margin-right: 10px;
+        margin-right: 1000px;
 }
-section {
-   margin: 0 auto;
-}
+
 }
 
 
