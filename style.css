@@ -56,7 +56,7 @@ html {
         background: #a8b98a;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; 
     }
 
 
@@ -102,7 +102,6 @@ html {
         img.shop-logo {
             width: 650px;
             border-radius: 50%;
-            background: #a8b98a;
             margin-bottom: -0px;
             border: 10px;
             margin-top: 0;
@@ -371,7 +370,36 @@ text-decoration: none;
     }
 }
 
-@media (max-width:768px){
+@media (max-width:850px){
+    .about {
+        display: block;
+        text-align: center;
+        padding-bottom: 900px;
+    }
+    .content {
+        text-align: end;
+    }
+    .catering {
+        text-align: center;
+    }
+    p .share {
+        text-align: center;
+    }
+    .about .row .image img {
+        display: block;
+        position:absolute;
+        padding-top: 150px;
+        justify-content: center;
+        height: auto;
+        margin-right: 10px;
+}
+.share{
+    padding-left: 5000px;
+}
+}
+
+
+@media (max-width:800px){
     header .icon #menu-bars{
         display: inline-block;
     }
@@ -404,21 +432,22 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     .about .row .image img{
         height: auto;
-        width: 40%;
+        width: 50%;
         margin-left: 200px;
     }
 
-    .home .home-slider .slide .content h3{
-        font-size: 5rem;
-    }
+    
     .about h3{
-        text-align:start;
+        text-align:center;
         font-size: 2rem;
+    }
+    p .share {
+        text-align: center;
     }
 }
 
 
-@media (max-width:450px){
+@media (max-width:400px){
     html {
         font-size: 50%;   
     }
@@ -429,13 +458,31 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     .order form .inputBox .input {
         width: 100%;
     }
-    .about .row .image {
+    .about {
         display: block;
-        text-align: start;
+        text-align: center;
+
     }
     .content {
         text-align: end;
     }
+    .catering {
+        text-align: center;
+    }
+    p .share {
+        text-align: center;
+    }
+    .about .row .image img {
+        display: block;
+        position:absolute;
+        padding: 200px 0 990px 0;
+        justify-content: center;
+        height: auto;
+        margin-right: 10px;
+}
+section {
+   margin: 0 auto;
+}
 }
 
 
