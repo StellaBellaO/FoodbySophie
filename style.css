@@ -112,7 +112,7 @@ html {
           }
           
 
-
+          
 
 
 
@@ -126,7 +126,7 @@ html {
 .about {
     background: #fbe7d7;
     padding-right: 10px;
-    padding: 20rem 9% 40rem 0rem;
+    padding: 20rem 9% 41.5rem 0rem;
 }
 
 .about .row .image {
@@ -136,11 +136,13 @@ html {
 }
 
 .about .row .image img{
-    max-width: 1250px;
+    max-width: 1390px;
     max-height: inherit;
     height: inherit;
     width: inherit;
 padding-top: 100px;
+transform: translateY(2.3%);
+float: left;
 }
 
 
@@ -170,7 +172,7 @@ padding-top: 100px;
     font-family: 'Hi Melody', cursive;
     font-weight:bolder; 
     color: #d45a28; 
-    font-size: 100px;
+    font-size: 90px;
     line-height: 0;
 }
 .line-2 {
@@ -179,7 +181,7 @@ margin-left: 5px;
   font-family: 'Hi Melody', cursive;
   font-weight:bolder; 
   color: #d45a28;font-family: 'Hi Melody', cursive;
-  font-size: 100px;
+  font-size: 90px;
 line-height: 1;
 }
 
@@ -189,7 +191,7 @@ line-height: 1;
       font-family: 'Hi Melody', cursive;
       font-weight:bolder;  
       color: #d45a28;
-      font-size: 100px;
+      font-size: 90px;
       line-height: 1;
     }
 
@@ -371,114 +373,130 @@ text-decoration: none;
     section{
         padding: 2rem;
     }
-}
-
-@media (max-width:850px){
-    .about {
-        display: block;
-        text-align: center;
-        padding-bottom: 900px;
-    }
-    .content {
-        text-align: end;
-    }
-    .catering {
-        text-align: center;
-    }
-    p .share {
-        text-align: center;
-    }
-    .about .row .image img {
-        display: block;
-        position:absolute;
-        padding-top: 150px;
-        justify-content: center;
-        height: auto;
-        margin-right: 10px;
-}
-.share{
-    padding-left: 5000px;
-}
+    header .navbar {
+        position: absolute;  
+        border-top: .1rem  rgba(0,0,0,.2);
+        border-bottom: .1rem  rgba(0,0,0,.2);
+       padding-top: 350px;
+      }
+  
+      header .navbar a{
+          display: block;
+          padding: 1.5rem;
+          margin: 4rem;
+          font-size: 2rem;
+        
+      }
 }
 
 
-@media (max-width:800px){
-    header .icon #menu-bars{
-        display: inline-block;
-    }
-
+@media (max-width:768px){
     header .navbar {
       position: absolute;  
-      top: 100%; left: 0; right: 0;
-      background: #a8b98a;
-      border-top: .1rem solid rgba(0,0,0,.2);
-      border-bottom: .1rem solid rgba(0,0,0,.2);
-      padding: 1rem;
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header .navbar.active{
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      border-top: .1rem  rgba(0,0,0,.2);
+      border-bottom: .1rem  rgba(0,0,0,.2);
+     padding-top: 350px;
     }
 
     header .navbar a{
         display: block;
         padding: 1.5rem;
-        margin: 1rem;
+        margin: 4rem;
         font-size: 2rem;
-        background: #eee;
+      
     }
 
     .image {
         display: block;
         text-align: center;
     }
-    .about .row .image img{
-        height: auto;
-        width: 40%;
-        margin-left: 200px;
-    }
     .about h3{
         text-align:center;
         font-size: 2rem;
     }
+    section{
+        padding: 2rem;
+    }
 }
 
 
-@media (max-width:400px){
+@media (max-width:450px){
     html {
         font-size: 50%;   
     }
-    .dishes .box-container .box img {
-        height: auto;
-        width: 100%;
-    }
-    .order form .inputBox .input {
-        width: 100%;
-    }
-    .about {
-        display: block;
-        text-align: center;
-    }
-    .content {
-        text-align: end;
-    }
-    .catering {
-        text-align: center;
-    }
-    p .share {
-        text-align: center;
-    }
     .about .row .image img {
-        display: block;
-        position:absolute;
-        padding: 200px 0 200px 0;
-        justify-content: center;
         height: auto;
-        margin-right: 1000px;
+        width: 40%;
+        margin-left: 200px;
+}
+header .navbar {
+    position: absolute;  
+    border-top: .1rem  rgba(0,0,0,.2);
+    border-bottom: .1rem  rgba(0,0,0,.2);
+   padding-top: 250px;
+  }
+
+  header .navbar a{
+      display: block;
+      padding: 1.5rem;
+      margin: 2rem;
+      font-size: 2rem;
+    
+  }
+
+  img.shop-logo {
+    width: 400px;
+    border-radius: 50%;
+    margin-bottom: -0px;
+    border: 10px;
+    margin-top: 0;
+}
+  .catering {
+      text-align: center;
+      font-size: 15px;
+  }
+  .line-1 {
+    margin-right: 80px;
+    padding-left: 0px;
+    font-size: 50px;
+    line-height: 0;
+}
+.line-2 {
+margin-left: 5px;
+  padding-left: 150px;
+  font-size: 50px;
+line-height: 1;
 }
 
-}
+.line-3 {
+    margin-left: 5px;
+      padding-left: 100px;
+      font-size: 50px;
+      line-height: 1;
+    }
+
+    .line-4{
+        margin-left: 5px;
+        padding-left: 100px;
+        font-size: 30px;
+        line-height: 1;
+    }
+    .content {
+        padding-left: 200px;
+    }
+    
+    .about .row .image img{
+        height: inherit;
+        width: 650px;
+    }
+    .about .row .image {
+        flex: 1 1 45rem;
+        position: relative;
+        display: block;
+        top: -3;
+    }
+    }
+
 
 
 
