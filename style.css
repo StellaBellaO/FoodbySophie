@@ -506,7 +506,7 @@ line-height: 1;
     .line-4{
         font-size: 30px;
         line-height: 1;
-        padding-right: 200px;
+        padding-right: 220px;
     }
     .content {
         padding-left: 0px;
@@ -520,6 +520,7 @@ line-height: 1;
     }
     .about .row .image {
         float: left;
+        margin-left: -30px;
     }
     }
 
